@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+.rightbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background: #242526;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    float:left; 
+    min-height:100vh;
+    margin-left: 75%;
+}
+
+.logo_content .logo .logo_name{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    display: relative;
+}
+.rightbar #btn{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.rightbar ul{
+    margin-top: 20px;
+}
+.rightbar ul li{
+    height: 50px;
+    list-style: none;
+    line-height: 50px;
+}
+.rightbar ul li .b{
+    position: relative;
+    color:#fff;
+    display:absolute;
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 14px;
+    position: relative;
+    color: rgba(41, 41, 41, 1);
+    background-color: rgba(242, 242, 242, 0.871);
+    font-weight: 400;
+    text-decoration: none;
+    margin: 3px;
+}
+
+.rightbar ul li .b:hover{
+    color: #11101d;
+    background: #fff;
+    position: relative;
+
+}
+
+.rightbar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: relative;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background: #18191A;
+    padding-left: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+.rightbar ul li .bx-search{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-left: 15px;
+    transition: all 0.5s ease;
+}
+.rightbar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.rightbar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: #1d1b31;
+}
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile .profile_details .job{
+    font-size: 12px;
+
+}
+.home_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+.home_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 12px;
+}
+
+.rightbar .active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
+}
+.rightbar .active #btn{
+    left: 90%;
+}
+.rightbar ul li .rec{
+    color: #fff;
+    margin-top: 5%;
+}
+.rightbar ul li img{
+    width: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin:0px 4.5%;
+    border: solid rgb(255, 255, 255) 1px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.035), 0 6px 20px 0 rgba(255, 255, 255, 0.063);
+}
+.rightbar ul li .insta{
+    border-radius: 100px;
+    padding: 8px 10px;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    background-color: rgba(242, 242, 242, 0.871);
+    font-weight: 400;
+    text-decoration: none;
+    align-items: flex-start;
+}
+
+.rightbar ul li .insta:hover{
+    color: #11101d;
+    background: #fff;
+
+}
+.rightbar ul li .face{
+    border-radius: 100px;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    background-color: rgba(242, 242, 242, 0.871);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.rightbar ul li .face:hover{
+    color: #11101d;
+    background: #fff;
+
+}
+.rightbar ul li .you{
+    border-radius: 100px;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+   font-weight: 400;
+    text-decoration: none;
+    align-items: flex-start;
+    background-color: rgba(242, 242, 242, 0.871);
+
+}
+
+.rightbar ul li .you:hover{
+    color: #11101d;
+    background: #fff;
+
+}
+.rightbar ul li .twit{
+    border-radius: 100px;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    background-color: rgba(242, 242, 242, 0.871);
+    font-weight: 400;
+    text-decoration: none;
+    align-items: flex-start;
+}
+.rightbar ul li .dis:hover{
+    color: #11101d;
+    background: #fff;
+
+}
+.rightbar ul li .dis{
+    border-radius: 100px;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    background-color: rgba(242, 242, 242, 0.871);
+    font-weight: 400;
+    text-decoration: none;
+    align-items: flex-start;
+}
+.rightbar ul li .red:hover{
+    color: #11101d;
+    background: #fff;
+
+}
+.rightbar ul li .red{
+    border-radius: 100px;
+    padding: 8px 10px;
+    width: 150px;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    background-color: rgba(242, 242, 242, 0.871);
+    font-weight: 400;
+    text-decoration: none;
+    align-items: flex-start;
+}
+.rightbar ul li .twit:hover{
+    color: #11101d;
+    background: #fff;
+
+}
+.rightbar ul li .insta i{
+    position: absolute;
+    font-size: 20px;
+    margin-top:4.5%;
+    margin-left: 0;
+}
+.rightbar ul li .dis i{
+    position: absolute;
+    font-size: 20px;
+    margin-top:4.5%;
+    margin-left: 0;
+}
+.rightbar ul li .red i{
+    position: absolute;
+    font-size: 20px;
+    margin-top:4.5%;
+    margin-left: 0;
+}
+.rightbar ul li .face i{
+    position: absolute;
+    font-size: 20px;
+    margin-top:4.5%;
+    margin-left: 0;
+}
+.rightbar ul li .you i{
+    position: absolute;
+    font-size: 20px;
+    margin-top:4.5%;
+    margin-left: 0;
+}
+.rightbar ul li .twit i{
+    position: absolute;
+    font-size: 20px;
+    margin-top:4.5%;
+    margin-left: 0;
+}
+.rightbar ul li .face .links_name{
+    padding-left: 25px;
+}
+.rightbar ul li .you .links_name{
+    padding-left: 25px;
+}
+.rightbar ul li .twit .links_name{
+    padding-left: 25px;
+}
+.rightbar ul li .insta .links_name{
+    padding-left: 25px;
+}
+.rightbar ul li .dis .links_name{
+    padding-left: 25px;
+}
+.rightbar ul li .red .links_name{
+    margin-left: 25px;
+}
+
+.rightbar .line1{
+    justify-content: center;
+    align-items: center;
+}
+.rightbar .instagram{
+    display: inline-block;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.spa{
+    margin-top: 5%;
+}
+.wed{
+    margin-top: 5%;
+}
+.ili1{
+    display: flex;
+    margin-left: 4%;
+}
+.ekron{
+    margin-right: 10%;
+    position: relative;
+}
+.flame{
+    margin-right: 10%;
+    position: relative;
+
+}
+.kb{
+    margin-right: 10%;
+    position: relative;
+
+}
+.mee{
+    margin-right: 10%;
+    position: relative;
+
+}
+.rand{
+    margin-right: 10%;
+    position: relative;
+
+}
+.rish{
+    margin-right: 10%;
+    position: relative;
+}
+.zombie{
+    margin-right: 10%;
+    position: relative;
+}
+
+#tooltip{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}
+.ekron:hover #tooltip{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.flame:hover #tooltip7{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.kb:hover #tooltip6{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.mag:hover #tooltip5{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.mee:hover #tooltip3{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.rand:hover #tooltip1{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.rish:hover #tooltip2{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+.zombie:hover #tooltip4{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+#tooltip1{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}
+#tooltip2{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}#tooltip3{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}#tooltip4{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}#tooltip5{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}#tooltip6{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}#tooltip7{
+    position: fixed;
+    display:inline-block;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 100px;
+    
+}
+
+
+
+
+
+
+
+
+      
